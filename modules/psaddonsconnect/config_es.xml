@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>psaddonsconnect</name>
+    <displayName><![CDATA[Modulo de Actualizaciones y consejos]]></displayName>
+    <version><![CDATA[1.0.1]]></version>
+    <description><![CDATA[Thanks to this module, connect to your Addons account from the dashboard of your back-office]]></description>
+    <author><![CDATA[PrestaShop]]></author>
+    <tab><![CDATA[]]></tab>
+	<confirmUninstall><![CDATA[¿Estás seguro de que quieres desinstalar este módulo?]]></confirmUninstall>
+    <is_configurable>0</is_configurable>
+    <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

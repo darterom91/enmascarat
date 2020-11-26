@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+.lista_importes_con_iva {    
+    font-weight: bold !important;    
+}
+.lista_importes_sin_iva {    
+    font-weight: bold !important;    
+}

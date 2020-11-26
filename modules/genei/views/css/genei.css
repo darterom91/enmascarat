@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+/*----FORMU REGISTRO----*/
+.formuRegistro {
+    margin: 0 20px 0 20px;
+}
+.formu label{
+    margin:0 0 0 5px;
+}
+#tipo_cliente{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+#tipo_cliente label{
+    float: none;
+    width: auto;
+}
+.formu input, .formu select{
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border: solid #EDEDED 1px;
+}
+.regHeader {
+    background-color: #007887 !important;
+    border-radius: 5px 5px 0 0;
+}
+.regHeader h4 {
+    color:#FFF!important;
+}
+.regHeader .close {
+    color: #FFF;
+    opacity: 0.5;
+}
+.tipoReg{
+    border-bottom:solid #EDEDED 1px;
+}
+.btnRegistro a {
+    color: #fff !important;
+    font-weight: bold !important;
+    font-family: 'Raleway', sans serif !important;
+}
+
+.bootstrap.panel {
+    display:none;
+}
