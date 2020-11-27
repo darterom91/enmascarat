@@ -6668,7 +6668,7 @@ textarea:active:-moz-placeholder {
     color: #2fb5d2;
 }
 .dropdown .expand-more {
-    color: rgb(255, 255, 255);
+    color: rgb(20, 16, 16);
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -10000,6 +10000,13 @@ li.product-flag:not(.discount):not(.on-sale) ~ li.product-flag {
 .footer-container p{
    color: rgb(255, 255, 255);
 }
+.footer-container a{
+   color: rgb(114, 206, 173);
+   transition: 1s;
+}
+.footer-container a:hover{
+   color: rgb(194, 107, 80);
+}
 .footer-container li {
     margin-bottom: 0.3125rem;
 }
@@ -10223,12 +10230,12 @@ li.product-flag:not(.discount):not(.on-sale) ~ li.product-flag {
     display: inline-block;
 }
 #header .header-nav {
-    background-color: rgb(20, 16, 16);
-    border-bottom: 2px solid #f1f1f1;
+    background-color: rgb(194, 107, 80);
+    border-bottom: 2px solid rgb(20, 16, 16);
     max-height: 50px;
 }
 #header .header-nav a{
-    color: rgb(255, 255, 255);
+    color: rgb(20, 16, 16);
 }
 #header .header-nav a:hover{
     color: #2fb5d2;
@@ -10287,7 +10294,7 @@ li.product-flag:not(.discount):not(.on-sale) ~ li.product-flag {
     display: none;
 }
 #header .header-nav .blockcart {
-    background: #f1f1f1;
+    background: rgba(20,16,16, 0.85);
     height: 3rem;
     padding: 0.75rem;
     margin-left: 0.9375rem;
@@ -10363,11 +10370,12 @@ li.product-flag:not(.discount):not(.on-sale) ~ li.product-flag {
     padding-top: 1.563rem;
     border-top: 5px solid rgb(20, 16, 16);
     border-bottom: 5px solid rgb(20, 16, 16);
-    transition: 0.5s;
+    transition: 1s;
 }
 #wrapper:hover{
     border-top: 10px solid rgb(20, 16, 16);
     border-bottom: 10px solid rgb(20, 16, 16);
+    background: rgba(114, 206 ,173, 0.3);
 }
 #wrapper .banner {
     margin-bottom: 1.5rem;
