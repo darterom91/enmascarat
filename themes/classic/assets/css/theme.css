@@ -7919,7 +7919,11 @@ body#checkout #footer {
     height: 318px;
     width: 257px;
     background: #fff;
-    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 8px 0 rgba(20, 16, 16, 0.2);
+    transition:box-shadow 1s;
+}
+.thumbnail-container:hover {
+    box-shadow: 2px 2px 8px 0 rgba(20, 16, 16, 0.8);
 }
 #products .thumbnail-container:focus .highlighted-informations,
 #products .thumbnail-container:hover .highlighted-informations,
