@@ -10522,19 +10522,21 @@ li.product-flag:not(.discount):not(.on-sale) ~ li.product-flag {
         margin-top: 1rem;
     }
     #header {
-        background: #f1f1f1;
+        background-color: rgb(194, 107, 80);
     }
     #header .header-nav {
-        background: #fff;
+        background-color: rgb(194, 107, 80);
         margin-bottom: 0.625rem;
         color: #232323;
     }
     #header .header-nav .top-logo {
-        padding-top: 11px;
+        padding: 2%;
     }
     #header .header-nav .top-logo a img {
         max-height: 50px;
         max-width: 100%;
+        border-radius: 100%;
+        background-color: rgb(255, 255, 255, 0.50);
     }
     #header .header-nav .right-nav {
         -webkit-box-orient: vertical;
@@ -10560,8 +10562,8 @@ li.product-flag:not(.discount):not(.on-sale) ~ li.product-flag {
         display: none;
     }
     #header .header-top {
-        background: #f1f1f1;
-        padding-bottom: 0;
+        background: rgb(194, 107, 80);
+        padding-bottom: 2%;
     }
     #header .header-top a[data-depth="0"] {
         color: #232323;
