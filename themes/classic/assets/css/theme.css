@@ -7881,6 +7881,12 @@ body#checkout #footer {
 .carousel .carousel-control.right {
     background: none;
 }
+.carousel {
+    transition:box-shadow 2s;
+}
+.carousel:hover {
+    box-shadow: 1px 2px 3px 3px rgba(20, 16, 16, 0.75);
+}
 #products .products,
 .featured-products .products,
 .product-accessories .products,
@@ -8271,6 +8277,10 @@ body#checkout #footer {
     font-weight: 700;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    transition: color 1s;
+}
+.all-product-link:hover {
+    color: rgb(20, 16, 16);
 }
 @media (max-width: 767px) {
     #products .thumbnail-container,
@@ -8290,6 +8300,10 @@ body#checkout #footer {
     margin-bottom: 1.5rem;
     padding: 3.125rem;
     text-align: center;
+    transition:box-shadow 1s;
+}
+#custom-text:hover {
+    box-shadow: 1px 2px 3px 3px rgba(20, 16, 16, 0.75);
 }
 #custom-text h2 {
     text-transform: uppercase;
@@ -10217,10 +10231,11 @@ li.product-flag:not(.discount):not(.on-sale) ~ li.product-flag {
     max-width: 60%;
     margin: 2%;
     border-radius: 100%;
-    transition: box-shadow 2s;
+    transition: box-shadow 2s, background-color 1s;
 }
 #header .logo:hover {
   box-shadow: 2px 4px 3px 1px black;
+  background-color: rgb(255, 255, 255);
 }
 #header a {
     color: #232323;
@@ -10384,6 +10399,10 @@ li.product-flag:not(.discount):not(.on-sale) ~ li.product-flag {
 #wrapper .banner {
     margin-bottom: 1.5rem;
     display: block;
+    transition:box-shadow 1s;
+}
+#wrapper .banner:hover {
+    box-shadow: 1px 2px 3px 3px rgba(20, 16, 16, 0.75);
 }
 #wrapper .banner img {
     box-shadow: 1px 1px 7px 0 rgba(0, 0, 0, 0.15);
