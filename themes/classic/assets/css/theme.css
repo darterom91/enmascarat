@@ -6668,7 +6668,7 @@ textarea:active:-moz-placeholder {
     color: #2fb5d2;
 }
 .dropdown .expand-more {
-    color: rgb(255, 255, 255);
+    color: rgb(20, 16, 16);
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -7881,6 +7881,12 @@ body#checkout #footer {
 .carousel .carousel-control.right {
     background: none;
 }
+.carousel {
+    transition:box-shadow 2s;
+}
+.carousel:hover {
+    box-shadow: 1px 2px 3px 3px rgba(20, 16, 16, 0.75);
+}
 #products .products,
 .featured-products .products,
 .product-accessories .products,
@@ -7919,7 +7925,11 @@ body#checkout #footer {
     height: 318px;
     width: 257px;
     background: #fff;
-    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 8px 0 rgba(20, 16, 16, 0.2);
+    transition:box-shadow 1s;
+}
+.thumbnail-container:hover {
+    box-shadow: 2px 2px 8px 0 rgba(20, 16, 16, 0.8);
 }
 #products .thumbnail-container:focus .highlighted-informations,
 #products .thumbnail-container:hover .highlighted-informations,
@@ -8267,6 +8277,10 @@ body#checkout #footer {
     font-weight: 700;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    transition: color 1s;
+}
+.all-product-link:hover {
+    color: rgb(20, 16, 16);
 }
 @media (max-width: 767px) {
     #products .thumbnail-container,
@@ -8286,6 +8300,10 @@ body#checkout #footer {
     margin-bottom: 1.5rem;
     padding: 3.125rem;
     text-align: center;
+    transition: box-shadow 1s;
+}
+#custom-text:hover {
+    box-shadow: 1px 2px 3px 3px rgba(20, 16, 16, 0.75);
 }
 #custom-text h2 {
     text-transform: uppercase;
@@ -10000,6 +10018,13 @@ li.product-flag:not(.discount):not(.on-sale) ~ li.product-flag {
 .footer-container p{
    color: rgb(255, 255, 255);
 }
+.footer-container a{
+   color: rgb(114, 206, 173);
+   transition: 1s;
+}
+.footer-container a:hover{
+   color: rgb(194, 107, 80);
+}
 .footer-container li {
     margin-bottom: 0.3125rem;
 }
@@ -10206,10 +10231,11 @@ li.product-flag:not(.discount):not(.on-sale) ~ li.product-flag {
     max-width: 60%;
     margin: 2%;
     border-radius: 100%;
-    transition: box-shadow 2s;
+    transition: box-shadow 2s, background-color 1s;
 }
 #header .logo:hover {
   box-shadow: 2px 4px 3px 1px black;
+  background-color: rgb(255, 255, 255);
 }
 #header a {
     color: #232323;
@@ -10223,12 +10249,12 @@ li.product-flag:not(.discount):not(.on-sale) ~ li.product-flag {
     display: inline-block;
 }
 #header .header-nav {
-    background-color: rgb(20, 16, 16);
-    border-bottom: 2px solid #f1f1f1;
+    background-color: rgb(194, 107, 80);
+    border-bottom: 2px solid rgb(20, 16, 16);
     max-height: 50px;
 }
 #header .header-nav a{
-    color: rgb(255, 255, 255);
+    color: rgb(20, 16, 16);
 }
 #header .header-nav a:hover{
     color: #2fb5d2;
@@ -10287,7 +10313,7 @@ li.product-flag:not(.discount):not(.on-sale) ~ li.product-flag {
     display: none;
 }
 #header .header-nav .blockcart {
-    background: #f1f1f1;
+    background: rgba(20,16,16, 0.85);
     height: 3rem;
     padding: 0.75rem;
     margin-left: 0.9375rem;
@@ -10363,15 +10389,20 @@ li.product-flag:not(.discount):not(.on-sale) ~ li.product-flag {
     padding-top: 1.563rem;
     border-top: 5px solid rgb(20, 16, 16);
     border-bottom: 5px solid rgb(20, 16, 16);
-    transition: 0.5s;
+    transition: 1s;
 }
 #wrapper:hover{
     border-top: 10px solid rgb(20, 16, 16);
     border-bottom: 10px solid rgb(20, 16, 16);
+    background: rgba(114, 206 ,173, 0.3);
 }
 #wrapper .banner {
     margin-bottom: 1.5rem;
     display: block;
+    transition:box-shadow 1s;
+}
+#wrapper .banner:hover {
+    box-shadow: 1px 2px 3px 3px rgba(20, 16, 16, 0.75);
 }
 #wrapper .banner img {
     box-shadow: 1px 1px 7px 0 rgba(0, 0, 0, 0.15);
@@ -10491,19 +10522,21 @@ li.product-flag:not(.discount):not(.on-sale) ~ li.product-flag {
         margin-top: 1rem;
     }
     #header {
-        background: #f1f1f1;
+        background-color: rgb(194, 107, 80);
     }
     #header .header-nav {
-        background: #fff;
+        background-color: rgb(194, 107, 80);
         margin-bottom: 0.625rem;
         color: #232323;
     }
     #header .header-nav .top-logo {
-        padding-top: 11px;
+        padding: 2%;
     }
     #header .header-nav .top-logo a img {
         max-height: 50px;
         max-width: 100%;
+        border-radius: 100%;
+        background-color: rgb(255, 255, 255, 0.50);
     }
     #header .header-nav .right-nav {
         -webkit-box-orient: vertical;
@@ -10529,8 +10562,8 @@ li.product-flag:not(.discount):not(.on-sale) ~ li.product-flag {
         display: none;
     }
     #header .header-top {
-        background: #f1f1f1;
-        padding-bottom: 0;
+        background: rgb(194, 107, 80);
+        padding-bottom: 2%;
     }
     #header .header-top a[data-depth="0"] {
         color: #232323;
